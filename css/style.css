@@ -15,7 +15,7 @@ main {
 }
 
 header {
-  background-color: rgb(73, 190, 37);
+  background-color: aquamarine;
   border: solid 5px var(--main-color);
   text-align: center;
   padding: 30px;
@@ -25,6 +25,7 @@ header {
 }
 
 .main__card {
+  background-color: aquamarine;
   border: solid 5px var(--main-color);
   margin-top: 30px;
   display: flex;
@@ -48,7 +49,7 @@ header {
 }
 
 .main__card--bookmark:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .main__card--question {
