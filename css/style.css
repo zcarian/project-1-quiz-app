@@ -32,13 +32,13 @@ header {
   justify-content: space-evenly;
   align-items: center;
   position: relative;
-  padding: 15px;
+  padding: 20px;
   padding-top: 30px;
   gap: 30px;
 }
 
-img {
-  height: 6vh;
+.main__card:last-of-type {
+  margin-bottom: 10px;
 }
 
 .main__card--bookmark {
@@ -48,11 +48,20 @@ img {
 }
 
 .main__card--bookmark:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
-.main__card:last-of-type {
-  margin-bottom: 10px;
+.main__card--question {
+  text-align: center;
+}
+
+.main__card--answer {
+  border: solid 2px black;
+  padding: 10px;
+}
+
+.main__card--answer:hover {
+  transform: scale(1.1);
 }
 
 .main__card--tags {
@@ -65,17 +74,12 @@ img {
   display: inline;
   border: solid;
   padding: 10px;
-  background-color: ;
 }
 
-.main__card--answer {
-  border: solid 2px black;
-  padding: 10px;
+img {
+  height: 6vh;
+  height: 50px;
 }
-.main__card--question {
-  text-align: center;
-}
-
 .nav-bar {
   border-top: 5px solid;
   background-color: azure;
