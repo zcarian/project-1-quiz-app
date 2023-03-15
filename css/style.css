@@ -1,0 +1,44 @@
+:root {
+  --main-color: blueviolet;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /* padding: 0; */
+}
+
+header {
+  background-color: rgb(73, 190, 37);
+  border: solid 5px var(--main-color);
+  text-align: center;
+  /* margin: 10px; */
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+.main__card {
+  border: solid 5px var(--main-color);
+  margin: 10px;
+  margin-bottom: 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-bar {
+  border: solid 5px var(--main-color);
+  background-color: azure;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  bottom: 0;
+}
+
+.nav-bar__button {
+  border: solid;
+  padding-left: 10p;
+}
