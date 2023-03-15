@@ -15,6 +15,7 @@ main {
   padding-left: 20px;
   padding-right: 20px;
   background-color: var(--background-secondary-color);
+  margin-bottom: 100px;
 }
 
 header {
@@ -84,7 +85,6 @@ header {
 }
 
 img {
-  height: 6vh;
   height: 50px;
 }
 .nav-bar {
@@ -92,7 +92,9 @@ img {
   background-color: var(--background-secondary-color);
   display: flex;
   justify-content: space-around;
-  position: sticky;
+  position: fixed;
+  left: 0;
+  right: 0;
   bottom: 0;
 }
 
