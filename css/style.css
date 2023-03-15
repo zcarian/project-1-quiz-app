@@ -1,5 +1,6 @@
 :root {
   --main-color: blueviolet;
+  --backgrounf-color: aquamarine;
 }
 
 * {
@@ -15,7 +16,7 @@ main {
 }
 
 header {
-  background-color: aquamarine;
+  background-color: var(--backgrounf-color);
   border: solid 5px var(--main-color);
   text-align: center;
   padding: 30px;
@@ -24,8 +25,8 @@ header {
   z-index: 1;
 }
 
-.main__card {
-  background-color: aquamarine;
+.main-card {
+  background-color: var(--backgrounf-color);
   border: solid 5px var(--main-color);
   margin-top: 30px;
   display: flex;
@@ -38,40 +39,40 @@ header {
   gap: 30px;
 }
 
-.main__card:last-of-type {
+.main-card:last-of-type {
   margin-bottom: 10px;
 }
 
-.main__card--bookmark {
+.main-card__bookmark {
   position: absolute;
   top: -20px;
   right: 0px;
 }
 
-.main__card--bookmark:hover {
+.main-card__bookmark:hover {
   transform: scale(1.1);
 }
 
-.main__card--question {
+.main-card__question {
   text-align: center;
 }
 
-.main__card--answer {
+.main-card__answer {
   border: solid 2px black;
   padding: 10px;
 }
 
-.main__card--answer:hover {
+.main-card__answer:hover {
   transform: scale(1.1);
 }
 
-.main__card--tags {
+.main-card__tags {
   align-self: flex-start;
   margin-left: 0px;
   padding-left: 0;
 }
 
-.main__card--tags li {
+.main-card__tags li {
   display: inline;
   border: solid;
   padding: 10px;
@@ -97,5 +98,5 @@ img {
 }
 
 .nav-bar__button:hover {
-  background-color: aquamarine;
+  background-color: var(--backgrounf-color);
 }
