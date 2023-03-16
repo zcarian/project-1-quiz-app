@@ -1,0 +1,31 @@
+.profile {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.profile__picutre {
+  width: 150px;
+  height: 150px;
+}
+.counters {
+  display: flex;
+  justify-content: space-around;
+}
+
+.counters .container {
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+}
+
+.container .icon {
+  margin-right: 10px;
+}
+
+.settings {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: large;
+}
