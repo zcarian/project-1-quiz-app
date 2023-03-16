@@ -1,5 +1,6 @@
 :root {
-  --border-color: blueviolet;
   --background-primary-color: aquamarine;
   --background-secondary-color: azure;
+  --border-color: blueviolet;
+  --font-color: black;
 }
