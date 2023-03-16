@@ -144,4 +144,6 @@ footer {
 .settings {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  font-size: large;
 }
