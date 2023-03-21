@@ -62,13 +62,13 @@ header {
   text-align: center;
 }
 
-.main-card__answer {
+.main-card__button {
   border: solid 2px black;
   padding: 10px;
   background-color: var(--background-secondary-color);
 }
 
-.main-card__answer:hover {
+.main-card__button:hover {
   transform: scale(1.1);
 }
 
