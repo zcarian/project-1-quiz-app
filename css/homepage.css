@@ -49,13 +49,15 @@ header {
   gap: 30px;
 }
 
-.main-card__bookmark {
+.main-card__bookmark-button {
+  border: none;
   position: absolute;
+  cursor: pointer;
   top: -20px;
-  right: 0px;
+  right: 10px;
+  background-color: transparent;
 }
-
-.main-card__bookmark:hover {
+.main-card__bookmark-button:hover {
   transform: scale(1.1);
 }
 
@@ -63,13 +65,13 @@ header {
   text-align: center;
 }
 
-.main-card__button {
+.main-card__answer-button {
   border: solid 2px black;
   padding: 10px;
   background-color: var(--background-secondary-color);
 }
 
-.main-card__button:hover {
+.main-card__answer-button:hover {
   transform: scale(1.1);
 }
 

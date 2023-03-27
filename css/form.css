@@ -1,0 +1,37 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  font-size: x-large;
+  align-items: center;
+}
+
+label {
+  align-self: flex-start;
+}
+
+.form > * {
+  margin: 10px;
+}
+
+.form__text {
+  width: 60vw;
+  background-color: var(--background-secondary-color);
+  border: solid var(--border-color);
+  border-radius: 10px;
+}
+
+.form > textarea {
+  height: 10vh;
+}
+
+#submit {
+  width: 20vw;
+  font-size: x-large;
+  background-color: var(--background-secondary-color);
+  border: solid var(--border-color);
+  border-radius: 10px;
+}
+
+#submit:hover {
+  transform: scale(1.1);
+}

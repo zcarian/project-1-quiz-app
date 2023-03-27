@@ -6,33 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/index.js" defer></script>
+    <script src="js/form.js" defer></script>
   </head>
   <body data-js="body">
     <header>
-      <h1>Bookmarks</h1>
+      <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="main-card container">
-        <h2 class="main-card__question">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
-          vitae aliquam
-        </h2>
-        <button class="main-card__answer-button">Show answer</button>
-        <p class="question-card__answer" hidden>ANSWER 1</p>
-        <button class="main-card__bookmark-button">
-          <img
-            src="assets/bookmark_filled.png"
-            alt="Bookmark"
-            class="main-card__bookmark icon"
-          />
-        </button>
-        <ul class="main-card__tags">
-          <li>tag 1</li>
-          <li>taag 22</li>
-          <li>taaag 333</li>
-        </ul>
-      </section>
+      <form class="container form" data-js="form">
+        <label for="question">Your question:</label>
+        <textarea
+          name="question"
+          id="question"
+          cols="20"
+          rows="10"
+          class="form__text"
+        ></textarea>
+
+        <label for="answer">Your answer:</label>
+        <textarea
+          name="answer"
+          id="answer"
+          cols="30"
+          rows="10"
+          class="form__text"
+        ></textarea>
+
+        <label for="tag">Tag:</label>
+        <input type="text" name="tag" id="tag" class="form__text" />
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
     </main>
     <footer class="nav-bar">
       <a href="index.html" class="nav-bar__button"
