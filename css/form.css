@@ -22,6 +22,16 @@ label {
 
 .form > textarea {
   height: 10vh;
+  font-size: large;
+}
+
+.letterCounter {
+  align-self: flex-end;
+  font-size: medium;
+}
+
+#tag {
+  font-size: larger;
 }
 
 #submit {

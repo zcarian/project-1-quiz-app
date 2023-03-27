@@ -25,6 +25,7 @@ showAnswerToggle.forEach((el, index) => {
     if (textOnButton === "Show answer") {
       showAnswerToggle[index].textContent = "Hide answer";
     } else {
+      //if (textOnButton === "Hide answer")
       showAnswerToggle[index].textContent = "Show answer";
     }
   });
