@@ -71,6 +71,10 @@ header {
   background-color: var(--background-secondary-color);
 }
 
+.hidden {
+  display: none;
+}
+
 .main-card__answer-button:hover {
   transform: scale(1.1);
 }

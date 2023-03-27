@@ -6,9 +6,26 @@ function changeIcon(obj) {
     obj.target["src"] = bookmarkIcon.replace(".png", "_filled.png");
   }
 }
+const bookmarkToggle = document.querySelectorAll(".main-card__bookmark-button");
 
-document.querySelectorAll(".main-card__bookmark-button").forEach((el) => {
+bookmarkToggle.forEach((el) => {
   el.addEventListener("click", (e) => {
     changeIcon(e);
+  });
+});
+
+const showAnswerToggle = document.querySelectorAll(".main-card__answer-button");
+
+const answer = document.querySelectorAll(".question-card__answer");
+
+showAnswerToggle.forEach((el, index) => {
+  el.addEventListener("click", () => {
+    answer[index].classList.toggle("hidden");
+    textOnButton = showAnswerToggle[index].textContent;
+    if (textOnButton === "Show answer") {
+      showAnswerToggle[index].textContent = "Hide answer";
+    } else {
+      showAnswerToggle[index].textContent = "Show answer";
+    }
   });
 });
