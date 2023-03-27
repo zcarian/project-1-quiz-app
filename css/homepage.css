@@ -18,7 +18,8 @@ body::-webkit-scrollbar {
 main {
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
+  padding-bottom: 100px;
 }
 
 header {
@@ -62,13 +63,13 @@ header {
   text-align: center;
 }
 
-.main-card__answer {
+.main-card__button {
   border: solid 2px black;
   padding: 10px;
   background-color: var(--background-secondary-color);
 }
 
-.main-card__answer:hover {
+.main-card__button:hover {
   transform: scale(1.1);
 }
 

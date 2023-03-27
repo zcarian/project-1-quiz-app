@@ -4,3 +4,10 @@
   --border-color: blueviolet;
   --font-color: black;
 }
+
+.dark-mode {
+  --background-primary-color: rgb(85, 59, 100);
+  --background-secondary-color: rgb(17, 85, 85);
+  --border-color: blueviolet;
+  --font-color: white;
+}
