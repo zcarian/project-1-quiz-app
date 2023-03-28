@@ -1,20 +1,25 @@
 const form = document.querySelector('[data-js="form"]');
-// const main = document.getElementById('main')
+
 const main = document.querySelector('[data-js="main"]');
+
+const answerAmountLeft = document.getElementById("answerAmountLeft");
+const questionAmountLeft = document.getElementById("questionAmountLeft");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const formData = new FormData(e.target);
   const data = Object.fromEntries(formData);
   creatQuestionCard(data);
-  document.getElementById("answerAmountLeft").innerText = 150;
-  document.getElementById("questionAmountLeft").innerText = 150;
+  answerAmountLeft.innerText = 150;
+  questionAmountLeft.innerText = 150;
   window.scrollTo(0, document.body.scrollHeight);
   e.target.reset();
-  // console.log(question, answer, tag);
+  // e.target.question.focus();
 });
 
 function creatQuestionCard(object) {
+  const tagArray = object.tag.split(" ");
+
   const newCard = document.createElement("section");
   newCard.classList.add("main-card");
   newCard.classList.add("container");
@@ -40,17 +45,21 @@ function creatQuestionCard(object) {
 
   const bookmarkIcon = document.createElement("img");
   bookmarkIcon.classList.add("icon");
-  bookmarkIcon.setAttribute("src", "assets/bookmark_filled.png");
+  bookmarkIcon.setAttribute("src", "assets/bookmark.png");
   bookmarkIcon.setAttribute("alt", "Bookmark");
   bookmarkButton.append(bookmarkIcon);
   newCard.append(bookmarkButton);
 
-  const newTag = document.createElement("li");
-  newTag.innerText = object.tag;
-
   const newTagList = document.createElement("ul");
+
+  for (let i = 0; i < tagArray.length; i++) {
+    console.log(tagArray[i]);
+    const newTag = document.createElement("li");
+    newTag.innerText = "#" + tagArray[i];
+    newTagList.append(newTag);
+  }
+
   newTagList.classList.add("main-card__tags");
-  newTagList.append(newTag);
   newCard.append(newTagList);
   main.append(newCard);
 }
@@ -59,12 +68,12 @@ const inputQuestion = document.getElementById("question");
 
 const inputAnswer = document.getElementById("answer");
 
-inputQuestion.addEventListener("input", (e) => {
-  document.getElementById("questionAmountLeft").innerText =
+inputQuestion.addEventListener("input", () => {
+  questionAmountLeft.innerText =
     150 - document.getElementById("question").value.length;
 });
 
-inputAnswer.addEventListener("input", (e) => {
-  document.getElementById("answerAmountLeft").innerText =
+inputAnswer.addEventListener("input", () => {
+  answerAmountLeft.innerText =
     150 - document.getElementById("answer").value.length;
 });

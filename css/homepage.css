@@ -67,6 +67,7 @@ header {
 
 .main-card__answer-button {
   border: solid 2px black;
+  border-radius: 10px;
   padding: 10px;
   background-color: var(--background-secondary-color);
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Quiz App</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/form.js" defer></script>
   </head>
@@ -22,6 +22,7 @@
           rows="10"
           class="form__text"
           maxlength="150"
+          required
         ></textarea>
         <small class="letterCounter"
           ><span id="questionAmountLeft">150</span> characters left</small
@@ -35,14 +36,15 @@
           rows="10"
           class="form__text"
           maxlength="150"
+          required
         ></textarea>
         <small class="letterCounter"
           ><span id="answerAmountLeft">150</span> characters left</small
         >
         <label for="tag">Tag:</label>
-        <input type="text" name="tag" id="tag" class="form__text" />
+        <input type="text" name="tag" id="tag" class="form__text" required />
 
-        <button type="submit" id="submit">Submit</button>
+        <button type="submit" id="submit">Add question</button>
       </form>
     </main>
     <footer class="nav-bar">
