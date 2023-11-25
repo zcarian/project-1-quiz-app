@@ -1,5 +1,5 @@
 const darkModeToggle = document.querySelector("#dark-mode-toggle");
-const body = document.querySelector("body");
+
 // function toggleDarkMode() {
 //   if (isDarkModeOn) {
 //     document.body.classList.add("dark-mode");
@@ -13,3 +13,4 @@ darkModeToggle.addEventListener("click", () => {
   //   isDarkModeOn = !isDarkModeOn;
   //   console.log("Dark mode:", isDarkModeOn);
 });
+darkModeToggle.addEventListener;
